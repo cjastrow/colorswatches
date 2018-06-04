@@ -1,0 +1,137 @@
+body {
+	margin: 0px;
+	font-family: arial;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+#enter {
+	background-image: url(../Images/Cantina.png);
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    background-position: left top;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 5000;
+}
+
+#clickMe {
+	position: relative;
+	top: 40vh;
+	text-align: center;
+	font-family: arial black;
+	color: yellow;
+	font-size: 30px;
+	user-select: none;
+}
+
+#clickMe:hover {
+	cursor: pointer;
+	font-size: 35px;
+}
+
+#contain {
+	position: fixed;
+	left: 100px;
+	top: 10px;
+	width: 200px;
+	margin: 0px auto;
+}
+
+#saber {
+	display: none;
+	width: 50px;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	user-select: none;
+}
+
+#whiteBlock {
+	position: absolute;
+	top: 502px;
+	left: 0px;
+	width: 100px;
+	height: 200px;
+	background-color: white;
+	user-select: none;
+}
+
+#saberColor{
+	display: none;
+	position: absolute;
+	top: 900px;
+	left: 27px;
+	width: 30px;
+	height: 500px;
+	background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+	user-select: none;
+	box-shadow: 0px 0px 5px black;
+}
+
+#button {
+	display: none;
+	width: 100px;
+	height: 200px;
+	border-radius: 500px;
+	background-color: #666;
+	position: fixed;
+	top: 200px;
+	left: 300px;
+	user-select: none;
+}
+
+#button:hover {
+	cursor: pointer;
+	border: 2px solid black;
+	left: 298px;
+	top: 198px;
+}
+
+#button:active {
+	width: 90px;
+	height: 190px;
+	top: 205px;
+	left: 305px;
+	border: none;
+}
+
+#mute {
+	display: none;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	width: 40px;
+	height: 15px;
+	border-radius: 50px;
+	background-color: white;
+	border: 2px solid black;
+	text-align: center;
+	color: black;
+	font-family: arial black;
+	font-size: 10px;
+}
+
+#mute:hover {
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	user-select: none;
+}
